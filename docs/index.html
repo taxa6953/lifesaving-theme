@@ -1,14 +1,11 @@
-<!-- pages/earthquake.html -->
-<!-- ابتدا هدر -->
-<!-- با فرض اینکه از پوشه pages صعود می‌کنیم به ../parts/header.html -->
-<!-- در حالت استاتیک باید این را دستی کپی کنی: -->
-<!-- (مطابق محتویات parts/header.html) -->
+<!-- docs/index.html -->
+<!-- سرآغاز صفحه -->
 <!DOCTYPE html>
 <html lang="fa">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>زلزله‌های استان</title>
+  <title>زلزله — هیات نجات غریق</title>
   <link rel="stylesheet" href="../assets/css/base.css" />
   <link rel="stylesheet" href="../assets/css/responsive.css" />
   <script src="../assets/js/main.js" defer></script>
@@ -16,6 +13,7 @@
 </head>
 <body>
 
+  <!-- می‌توانی header.html را اینجا include کنی یا دستی کپی کنی -->
   <header>
     <nav class="main-nav">
       <a href="#" onclick="return false">صفحه اصلی</a>
@@ -26,16 +24,12 @@
   </header>
 
   <!-- ==== محتویات کارت‌ها ==== -->
-
   <div class="cards-container">
-    <!-- کارت اول -->
     <div class="card">
       <img src="../assets/images/earthquake-top/image-card5.png" alt="تصویر 5" />
       <div class="card-title">شدت زمین لرزه</div>
       <div class="card-text">سطح‌بندی شدت لرزه ناشی از زمین لرزه</div>
     </div>
-
-    <!-- کارت دوم -->
     <div class="card">
       <img src="../assets/images/earthquake-top/image-card4.png" alt="تصویر 4" />
       <div class="card-title">سابقه لرزه‌خیزی در منطقه و وقوع زمین لرزه میانمار</div>
@@ -43,16 +37,13 @@
     </div>
   </div>
 
-  <!-- زلزله‌های استان -->
   <div class="section-header">
     <div>
       <div class="section-title">زلزله‌های استان (۱۴۰۴)</div>
       <div class="subtitle">آخرین گزارش‌ها از مناطق زلزله‌خیز سیستان و بلوچستان</div>
     </div>
   </div>
-
   <div class="cards-container-2">
-    <!-- کارت نمونه -->
     <div class="modern-card-2">
       <div class="card-image-2" style="background-image: url('../assets/images/image-card.jpg');"></div>
       <div class="glass-bar-2">
@@ -66,8 +57,6 @@
         <span class="button">جزئیات</span>
       </div>
     </div>
-
-    <!-- کارت دیگر -->
     <div class="modern-card-2">
       <div class="card-image-2" style="background-image: url('../assets/images/mls-logo2.png');"></div>
       <div class="glass-bar-2">
@@ -83,14 +72,12 @@
     </div>
   </div>
 
-  <!-- بخش آموزشی / اپ‌ها -->
   <div class="section-header">
     <div>
       <div class="section-title">زلزله</div>
       <div class="subtitle">درباره زلزله چه می‌دانیم</div>
     </div>
   </div>
-
   <div class="container">
     <div class="app">
       <div class="app-info">
@@ -102,7 +89,6 @@
       </div>
       <span class="button">جزئیات</span>
     </div>
-
     <div class="app">
       <div class="app-info">
         <img src="../assets/images/image-card2.png" alt="تصویر 2" />
@@ -113,7 +99,6 @@
       </div>
       <span class="button">جزئیات</span>
     </div>
-
     <div class="app">
       <div class="app-info">
         <img src="../assets/images/image-card3.png" alt="تصویر 3" />
@@ -125,10 +110,8 @@
       <span class="button">جزئیات</span>
     </div>
   </div>
-
   <!-- ==== پایان محتوا ==== -->
 
-  <!-- فوتر -->
   <footer>
     طراح وب‌سایت: مهندس طاها سرگزی
   </footer>
