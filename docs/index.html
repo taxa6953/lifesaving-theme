@@ -1,1 +1,136 @@
+<!-- pages/earthquake.html -->
+<!-- ابتدا هدر -->
+<!-- با فرض اینکه از پوشه pages صعود می‌کنیم به ../parts/header.html -->
+<!-- در حالت استاتیک باید این را دستی کپی کنی: -->
+<!-- (مطابق محتویات parts/header.html) -->
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>زلزله‌های استان</title>
+  <link rel="stylesheet" href="../assets/css/base.css" />
+  <link rel="stylesheet" href="../assets/css/responsive.css" />
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/ui.js" defer></script>
+</head>
+<body>
 
+  <header>
+    <nav class="main-nav">
+      <a href="#" onclick="return false">صفحه اصلی</a>
+      <a href="#" onclick="return false">دوره‌ها</a>
+      <a href="#" onclick="return false">اخبار</a>
+      <a href="#" onclick="return false">تماس با ما</a>
+    </nav>
+  </header>
+
+  <!-- ==== محتویات کارت‌ها ==== -->
+
+  <div class="cards-container">
+    <!-- کارت اول -->
+    <div class="card">
+      <img src="../assets/images/earthquake-top/image-card5.png" alt="تصویر 5" />
+      <div class="card-title">شدت زمین لرزه</div>
+      <div class="card-text">سطح‌بندی شدت لرزه ناشی از زمین لرزه</div>
+    </div>
+
+    <!-- کارت دوم -->
+    <div class="card">
+      <img src="../assets/images/earthquake-top/image-card4.png" alt="تصویر 4" />
+      <div class="card-title">سابقه لرزه‌خیزی در منطقه و وقوع زمین لرزه میانمار</div>
+      <div class="card-text">بزرگی ٧.٧ ریشتر</div>
+    </div>
+  </div>
+
+  <!-- زلزله‌های استان -->
+  <div class="section-header">
+    <div>
+      <div class="section-title">زلزله‌های استان (۱۴۰۴)</div>
+      <div class="subtitle">آخرین گزارش‌ها از مناطق زلزله‌خیز سیستان و بلوچستان</div>
+    </div>
+  </div>
+
+  <div class="cards-container-2">
+    <!-- کارت نمونه -->
+    <div class="modern-card-2">
+      <div class="card-image-2" style="background-image: url('../assets/images/image-card.jpg');"></div>
+      <div class="glass-bar-2">
+        <div class="logo-area-2">
+          <img src="../assets/images/mls-logo.png" alt="لوگو" class="logo-2" />
+          <div class="text-content-2">
+            <div class="event-title-2">1404/01/15</div>
+            <div class="event-description-2">گشت، استان سیستان و بلوچستان</div>
+          </div>
+        </div>
+        <span class="button">جزئیات</span>
+      </div>
+    </div>
+
+    <!-- کارت دیگر -->
+    <div class="modern-card-2">
+      <div class="card-image-2" style="background-image: url('../assets/images/mls-logo2.png');"></div>
+      <div class="glass-bar-2">
+        <div class="logo-area-2">
+          <img src="../assets/images/mls-logo2.png" alt="لوگو" class="logo-2" />
+          <div class="text-content-2">
+            <div class="event-title-2">1404/01/12</div>
+            <div class="event-description-2">خاش، استان سیستان و بلوچستان</div>
+          </div>
+        </div>
+        <span class="button">جزئیات</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- بخش آموزشی / اپ‌ها -->
+  <div class="section-header">
+    <div>
+      <div class="section-title">زلزله</div>
+      <div class="subtitle">درباره زلزله چه می‌دانیم</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="app">
+      <div class="app-info">
+        <img src="../assets/images/image-card1.png" alt="تصویر 1" />
+        <div class="app-text">
+          <div class="app-title">مقیاس بزرگی MW</div>
+          <div class="app-subtitle">افزایش مقدار بزرگی و انرژی آن</div>
+        </div>
+      </div>
+      <span class="button">جزئیات</span>
+    </div>
+
+    <div class="app">
+      <div class="app-info">
+        <img src="../assets/images/image-card2.png" alt="تصویر 2" />
+        <div class="app-text">
+          <div class="app-title">بزرگی زمین لرزه</div>
+          <div class="app-subtitle">تعیین معیاری برای اندازه زمین لرزه</div>
+        </div>
+      </div>
+      <span class="button">جزئیات</span>
+    </div>
+
+    <div class="app">
+      <div class="app-info">
+        <img src="../assets/images/image-card3.png" alt="تصویر 3" />
+        <div class="app-text">
+          <div class="app-title">شدت زمین لرزه</div>
+          <div class="app-subtitle">معیاری برای اندازه‌گیری</div>
+        </div>
+      </div>
+      <span class="button">جزئیات</span>
+    </div>
+  </div>
+
+  <!-- ==== پایان محتوا ==== -->
+
+  <!-- فوتر -->
+  <footer>
+    طراح وب‌سایت: مهندس طاها سرگزی
+  </footer>
+</body>
+</html>
