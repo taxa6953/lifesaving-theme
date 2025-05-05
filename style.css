@@ -78,25 +78,26 @@ a.filter-box:hover {
   background-color: #d0d0d0;
 }
 
+
 /* بخش عنوان + دکمه بیشتر */
 .section-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem; /* معادل حدود 20px */
+  margin: 20px;
 }
 
 /* عنوان اصلی */
 .section-title {
-  font-size: 2rem;    /* معادل حدود 24px */
+  font-size: 24px;
   font-weight: bold;
 }
 
 /* زیرعنوان */
 .subtitle {
-  font-size: 1.75rem;  /* معادل حدود 18px */
+  font-size: 18px;
   color: #666;
-  margin-top: 0.3125rem; /* معادل حدود 5px */
+  margin-top: 5px;
 }
 
 /* دکمه بیشتر */
@@ -104,17 +105,15 @@ a.filter-box:hover {
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-size: 1.75rem;      /* معادل حدود 16px */
+  font-size: 16px;
   color: #0077cc;
-  gap: 0.3125rem;       /* معادل حدود 5px */
+  gap: 5px;
 }
 
 .more-button img {
-  width: 1rem;          /* معادل حدود 16px */
-  height: 1rem;         /* معادل حدود 16px */
+  width: 16px;
+  height: 16px;
 }
-
-
 /* کارت‌ها */
 .card-section,
 .cards-container-2 {
