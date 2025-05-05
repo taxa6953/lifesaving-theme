@@ -1,10 +1,9 @@
 /* ======= استایل اول ======= */
 body {
-  font-family: 'Vazir', sans-serif;
-  background: #f5deb3;
-  margin: 0;
-  padding: 0;
-  direction: rtl;
+  background: url('assets/images/sand-texture.jpg') repeat;
+  background-size: auto; /* یا background-size: cover; اگر نمی‌خواهید تکرار شود */
+  color: #333;
+  font-family: 'Vazir', sans-serif;
 }
 
 /* هدر */
