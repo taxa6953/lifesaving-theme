@@ -82,17 +82,20 @@ a.filter-box:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
+  margin: 1.25rem; /* معادل حدود 20px */
 }
+
+/* عنوان اصلی */
 .section-title {
-  font-size: 16px;
+  font-size: 1.5rem;    /* معادل حدود 24px */
   font-weight: bold;
 }
+
+/* زیرعنوان */
 .subtitle {
-  font-size: 15px;
+  font-size: 1.125rem;  /* معادل حدود 18px */
   color: #666;
-  margin-top: 5px;
-  /* توجه: در HTML اصلی، برخی بلوک‌ها از کلاس subtitle-2 استفاده می‌کردند */
+  margin-top: 0.3125rem; /* معادل حدود 5px */
 }
 
 /* دکمه بیشتر */
@@ -100,14 +103,16 @@ a.filter-box:hover {
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 1rem;      /* معادل حدود 16px */
   color: #0077cc;
-  gap: 5px;
+  gap: 0.3125rem;       /* معادل حدود 5px */
 }
+
 .more-button img {
-  width: 16px;
-  height: 16px;
+  width: 1rem;          /* معادل حدود 16px */
+  height: 1rem;         /* معادل حدود 16px */
 }
+
 
 /* کارت‌ها */
 .card-section,
