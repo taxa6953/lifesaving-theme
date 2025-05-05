@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>اداره کل مدیریت بحران</title>
+  <title>هیات نجات  غریق و غواصی</title>
   <!-- فونت فارسی -->
   <link rel="stylesheet" href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" />
   <!-- فونت دوم -->
@@ -19,179 +19,119 @@
   <!-- جست‌وجو -->
   <div class="search-box">
     <input type="text" placeholder="جست و جو..." />
-    <img src="assets/search.gif" alt="جست‌وجو" />
+    <img src="assets/images/search.gif" alt="جست‌وجو" />
   </div>
 
   <!-- فیلترهای سریع -->
   <div class="quick-filters">
-    <a href="earthquake-top/index.html" class="filter-box">زلزله</a>
+    <a href="earthquake-top/index.html" class="filter-box">دانلود فرم ها</a>
   </div>
 
-  <!-- دانستنی ها -->
+<!-- آخرین اخبار -->
+<div class="section-header">
+  <div>
+    <div class="section-title">آخرین اخبار</div>
+    <div class="subtitle">آخرین رویدادهای مهم</div>
+  </div>
+</div>
+
+<div class="cards-container-2">
+  <div class="modern-card-2">
+    <div class="card-image-2" style="background-image: url('assets/images/news/image-card1.png');"></div>
+    <div class="glass-bar-2">
+      <div class="logo-area-2">
+        <img src="assets/mls-logo.png" alt="لوگو" class="logo-2">
+        <div class="text-content-2">
+          <div class="event-title-2">عنوان یک</div>
+          <div class="event-description-2">توضیحات یک</div>
+        </div>
+      </div>
+      <a href="earthquake/card1/index.html">
+        <button class="button">جزئیات</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="modern-card-2">
+    <div class="card-image-2" style="background-image: url('assets/images/news/image-card1.png');"></div>
+    <div class="glass-bar-2">
+      <div class="logo-area-2">
+        <img src="assets/mls-logo2.png" alt="لوگو" class="logo-2">
+        <div class="text-content-2">
+          <div class="event-title-2">عنوان دو</div>
+          <div class="event-description-2">توضیحات دو</div>
+        </div>
+      </div>
+      <a href="earthquake/card2/index.html">
+        <button class="button">جزئیات</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="modern-card-2">
+    <div class="card-image-2" style="background-image: url('assets/images/news/image-card1.png');"></div>
+    <div class="glass-bar-2">
+      <div class="logo-area-2">
+        <img src="assets/mls-logo.png" alt="لوگو" class="logo-2">
+        <div class="text-content-2">
+          <div class="event-title-2">عنوان سه</div>
+          <div class="event-description-2">توضیحات سه</div>
+        </div>
+      </div>
+      <a href="earthquake/card1/index.html">
+        <button class="button">جزئیات</button>
+      </a>
+    </div>
+  </div>
+</div>
+
+  <!-- دوره های آموزشی -->
   <div class="section-header">
-    <div class="section-title">دانستی ها</div>
+    <div class="section-title">دوره های آموزشی</div>
     <a href="popular/index.html" class="more-button">
       <span>بیشتر</span>
-      <img src="assets/more.png" alt="بیشتر" />
+      <img src="assets/images/more.png" alt="بیشتر" />
     </a>
   </div>
 
   <div class="card-section">
     <a class="card" href="popular/card1/index.html">
-      <img src="https://drive.google.com/uc?export=view&id=1htn_tTOqEJJXENSZgSFg2TsA1zq1ZFzY" alt="تصویر 1"/>
-      <div class="card-title">کره زمین</div>
-      <div class="card-text">لایه‌بندی کره زمین</div>
+      <img src="assets/images/amozesh/image-card1.png" alt="تصویر 1"/>
+      <div class="card-title">دوره آموزشی یک</div>
+      <div class="card-text">توضیح دوره آمپزشی یک</div>
     </a>
     <a href="popular/card7/index.html" class="card">
-      <img src="assets/image2.png" alt="تصویر 7" />
-      <div class="card-title">بیست و دوم فروردین</div>
-      <div class="card-text">روز ایمنی ورود به فضای بسته</div>
+      <img src="assets/images/amozesh/image-card1.png" alt="تصویر 2" />
+      <div class="card-title">دوره آموزشی دو</div>
+      <div class="card-text">توضیح دوره آموزشی  دو</div>
     </a>
     <a href="popular/card6/index.html" class="card">
-      <img src="popular/image-card6.png" alt="تصویر 6" />
-      <div class="card-title">منشا پیدایش مخاطرات طبیعی</div>
-      <div class="card-text">"آب و هوایی" و "زمین‌ساختی"</div>
+      <img src="assets/images/amozesh/image-card1.png" alt="تصویر 3" />
+      <div class="card-title">دوره آموزشی سه </div>
+      <div class="card-text">توضیح دوره آموزشی سه</div>
     </a>
     <a href="popular/card5/index.html" class="card">
-      <img src="popular/image-card5.png" alt="تصویر 5" />
-      <div class="card-title">موضوعات اصلی مواد قانون مدیریت بحران کشور</div>
-      <div class="card-text">(مصوب ۱۳۹۸/۵/۷)</div>
+      <img src="assets/images/amozesh/image-card1.png" alt="تصویر 4" />
+      <div class="card-title">دوره آموزشی چهار</div>
+      <div class="card-text">توضیح دوره آموزشی چهار</div>
     </a>
-    <a href="popular/card1/index.html" class="card">
-      <img src="popular/image-card1.png" alt="تصویر ۱" />
-      <div class="card-title">مدیریت شرایط اضطراری FEMA</div>
-      <div class="card-text">گام های تدوین برنامه عملیات اضطراری</div>
-    </a>
+  
   </div>
      
-  <!-- زلزله‌های استان (۱۴۰۴) -->
-<div class="section-header">
-  <div>
-    <div class="section-title">زلزله‌های استان (۱۴۰۴)</div>
-    <div class="subtitle">آخرین گزارش‌ها از مناطق زلزله‌خیز سیستان و بلوچستان</div>
-  </div>
-</div>
-
-<div class="cards-container-2">
-  <div class="modern-card-2">
-    <div class="card-image-2" style="background-image: url('assets/image-card.jpg');"></div>
-    <div class="glass-bar-2">
-      <div class="logo-area-2">
-        <img src="assets/mls-logo.png" alt="لوگو" class="logo-2">
-        <div class="text-content-2">
-          <div class="event-title-2">1404/01/15</div>
-          <div class="event-description-2">گشت، استان سیستان و بلوچستان</div>
-        </div>
-      </div>
-      <a href="earthquake/card1/index.html">
-        <button class="button">جزئیات</button>
-      </a>
-    </div>
-  </div>
-
-  <div class="modern-card-2">
-    <div class="card-image-2" style="background-image: url('assets/image-card2.jpg');"></div>
-    <div class="glass-bar-2">
-      <div class="logo-area-2">
-        <img src="assets/mls-logo2.png" alt="لوگو" class="logo-2">
-        <div class="text-content-2">
-          <div class="event-title-2">1404/01/12</div>
-          <div class="event-description-2">خاش، استان سیستان و بلوچستان</div>
-        </div>
-      </div>
-      <a href="earthquake/card2/index.html">
-        <button class="button">جزئیات</button>
-      </a>
-    </div>
-  </div>
-</div>
-
-  <!-- زمین لرزه -->
-  <div class="section-header">
-    <div class="section-title">زمین لرزه</div>
-    <a href="earthquake-top/index.html" class="more-button">
-      <span>بیشتر</span>
-      <img src="assets/more.png" alt="بیشتر" />
-    </a>
-  </div>
-  <div class="card-section">
-    <a href="earthquake-top/card1/index.html" class="card">
-      <img src="assets/image2.png" alt="تصویر 7" />
-      <div class="card-title">مقیاس بزرگیMW</div>
-      <div class="card-text">افزایش مقدار بزرگی زمین لرزه و مقدار انرژی آزاد شده</div>
-    </a>
-    <a href="earthquake-top/card6/index.html" class="card">
-      <img src="assets/image2.png" alt="تصویر 6" />
-      <div class="card-title">بزرگی زمین لرزه</div>
-      <div class="card-text">تعیین معیار برای مقایسه و سنجش زمین لزره ها</div>
-    </a>
-    <a href="earthquake-top/card5/index.html" class="card">
-      <img src="earthquake-top/image-card5.png" alt="تصویر 5" />
-      <div class="card-title">شدت زمین لرزه</div>
-      <div class="card-text">سطح بندی شدت لرزه ناشی از زمین لرزه</div>
-    </a>
-    <a href="earthquake-top/card4/index.html" class="card">
-      <img src="earthquake-top/image-card4.png" alt="تصویر 4" />
-      <div class="card-title">سابقه لرزه خیزی در منطقه و وقوع زمین لرزه میانمار</div>
-      <div class="card-text">بزرگی ٧.٧ ریشتر</div>
-    </a>
-  </div>
-
-  <!-- دوباره زلزله‌های استان (تکرار) -->
- <div class="section-header">
-  <div>
-    <div class="section-title">زلزله‌های استان (۱۴۰۴)</div>
-    <div class="subtitle">آخرین گزارش‌ها از مناطق زلزله‌خیز سیستان و بلوچستان</div>
-  </div>
-</div>
-
-<div class="cards-container-2">
-  <div class="modern-card-2">
-    <div class="card-image-2" style="background-image: url('assets/image-card.jpg');"></div>
-    <div class="glass-bar-2">
-      <div class="logo-area-2">
-        <img src="assets/mls-logo.png" alt="لوگو" class="logo-2">
-        <div class="text-content-2">
-          <div class="event-title-2">1404/01/15</div>
-          <div class="event-description-2">گشت، استان سیستان و بلوچستان</div>
-        </div>
-      </div>
-      <a href="earthquake/card1/index.html">
-        <button class="button">جزئیات</button>
-      </a>
-    </div>
-  </div>
-
-  <div class="modern-card-2">
-    <div class="card-image-2" style="background-image: url('assets/image-card2.jpg');"></div>
-    <div class="glass-bar-2">
-      <div class="logo-area-2">
-        <img src="assets/mls-logo2.png" alt="لوگو" class="logo-2">
-        <div class="text-content-2">
-          <div class="event-title-2">1404/01/12</div>
-          <div class="event-description-2">خاش، استان سیستان و بلوچستان</div>
-        </div>
-      </div>
-      <a href="earthquake/card2/index.html">
-        <button class="button">جزئیات</button>
-      </a>
-    </div>
-  </div>
-</div>
-  <!-- کارت‌های بازی -->
+<!-- مرروی بر اخبار -->
   <div class="section-header">
     <div>
-      <div class="section-title">زلزله</div>
-      <div class="subtitle">درباره زلزله چه میدانیم</div>
+      <div class="section-title">اخبار</div>
+      <div class="subtitle">مروری بر اخبار</div>
     </div>
   </div>
   <div class="container">
     <div class="app">
       <div class="app-info">
-        <img src="assets/image-card1.png" alt="تصویر 1">
+        <img src="assets/images/news/image-card1.png" alt="تصویر 1">
         <div class="app-text">
-          <div class="app-title">مقیاس بزرگیMW</div>
-          <div class="app-subtitle">افزایش مقدار بزرگی و انرژی ان</div>
+          <div class="app-title">خبر یک</div>
+          <div class="app-subtitle">توضیح خبر بک</div>
         </div>
       </div>
       <a href="cards/index-card1.html">
@@ -201,10 +141,10 @@
 
     <div class="app">
       <div class="app-info">
-        <img src="assets/image-card2.png" alt="تصویر 2"> 
+        <img src="assets/images/news/image-card1.png" alt="تصویر 2"> 
         <div class="app-text">
-          <div class="app-title">بزرگی زمین لرزه </div>
-          <div class="app-subtitle">تعیین معیاری برای اندازه زمین لرزه</div>
+          <div class="app-title">خبر دو </div>
+          <div class="app-subtitle">توضیح خبر دو</div>
         </div>
       </div>
       <a href="cards/index-card2.html">
@@ -212,19 +152,77 @@
       </a>
     </div>
 
-    <div class="app">
+<div class="app">
       <div class="app-info">
-        <img src="assets/image-card3.png" alt="تصویر 3">
+        <img src="assets/images/news/image-card1.png" alt="تصویر 3">
         <div class="app-text">
-          <div class="app-title">شدت زمین لرزه</div>
-          <div class="app-subtitle">معیاری برای اندازه گیری</div>
+          <div class="app-title">خبر سوم</div>
+          <div class="app-subtitle">توضیح خبر سوم</div>
         </div>
       </div>
       <a href="cards/index-card3.html">
         <button class="button">جزئیات</button>
       </a>
     </div>
+<div class="app">
+      <div class="app-info">
+        <img src="assets/images/news/image-card1.png" alt="تصویر 4">
+        <div class="app-text">
+          <div class="app-title">خبر چهار</div>
+          <div class="app-subtitle">توضیح خبر چهار</div>
+        </div>
+      </div>
+      <a href="cards/index-card3.html">
+        <button class="button">جزئیات</button>
+      </a>
+    </div>
+<div class="app">
+      <div class="app-info">
+        <img src="assets/images/news/image-card1.png" alt="تصویر 5">
+        <div class="app-text">
+          <div class="app-title">خبر پنج</div>
+          <div class="app-subtitle">توضیح خبر پنج</div>
+        </div>
+      </div>
+      <a href="cards/index-card3.html">
+        <button class="button">جزئیات</button>
+      </a>
+    </div>
+    
   </div>
+  <!-- معرفی اعضای هیات غواصی  -->
+  <div class="section-header">
+    <div class="section-title">معرفی اعضای هیات</div>
+    <a href="earthquake-top/index.html" class="more-button">
+      <span>بیشتر</span>
+      <img src="assets/images/more.png" alt="بیشتر" />
+    </a>
+  </div>
+  <div class="card-section">
+    <a href="earthquake-top/card1/index.html" class="card">
+      <img src="assets/images/team/image-card1.png" alt="تصویر 1" />
+      <div class="card-title">عضو یک</div>
+      <div class="card-text">توضیح یک</div>
+    </a>
+    <a href="earthquake-top/card6/index.html" class="card">
+      <img src="assets/images/team/image-card1.png" alt="تصویر 2" />
+      <div class="card-title">عضو دوم</div>
+      <div class="card-text">معرفی عضو دوم</div>
+    </a>
+    <a href="earthquake-top/card5/index.html" class="card">
+      <img src="assets/images/team/image-card1.png" alt="تصویر 3" />
+      <div class="card-title">عضو سوم</div>
+      <div class="card-text">معرفی عضو سوم</div>
+    </a>
+    <a href="earthquake-top/card4/index.html" class="card">
+      <img src="assets/images/team/image-card1.png" alt="تصویر 4" />
+      <div class="card-title">عضو چهارم</div>
+      <div class="card-text">معرفی عضو چهارم</div>
+    </a>
+  </div>
+
+ 
+  
 
   <!-- فوتر -->
   <div w3-include-html="parts/footer.html"></div>
