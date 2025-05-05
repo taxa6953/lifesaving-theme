@@ -233,29 +233,6 @@ a.filter-box:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.open-button-2 {
-  padding: 10px 18px;
-  border-radius: 25px;
-  font-weight: bold;
-  font-size: 13px;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  border: none;
-  white-space: nowrap;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.2s;
-  font-family: 'IranYekan', sans-serif;
-  text-decoration: none;
-}
-.open-button-2:hover {
-  background-color: rgba(0, 0, 0, 0.9);
-  text-decoration: none;
-}
-
 /* اپلیکیشن */
 .container {
   background: white;
