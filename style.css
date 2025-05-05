@@ -83,18 +83,18 @@ a.filter-box:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2.5rem; /* معادل حدود 20px */
+  margin: 2rem; /* معادل حدود 20px */
 }
 
 /* عنوان اصلی */
 .section-title {
-  font-size: 2.5rem;    /* معادل حدود 24px */
+  font-size: 2rem;    /* معادل حدود 24px */
   font-weight: bold;
 }
 
 /* زیرعنوان */
 .subtitle {
-  font-size: 2rem;  /* معادل حدود 18px */
+  font-size: 1.75rem;  /* معادل حدود 18px */
   color: #666;
   margin-top: 0.3125rem; /* معادل حدود 5px */
 }
@@ -104,7 +104,7 @@ a.filter-box:hover {
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-size: 2rem;      /* معادل حدود 16px */
+  font-size: 1.75rem;      /* معادل حدود 16px */
   color: #0077cc;
   gap: 0.3125rem;       /* معادل حدود 5px */
 }
