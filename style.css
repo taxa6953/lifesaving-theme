@@ -314,9 +314,61 @@ a.filter-box:hover {
 }
 
 /* فوتر */
-footer {
+.footer {
+  background: url('6E5401CF-9875-4F31-A5F1-5B2A2A1F9D86.jpeg') no-repeat center center/cover;
+  color: white;
+  font-family: 'Vazir', sans-serif;
+  padding: 40px 20px;
+  position: relative;
+  direction: rtl;
+}
+
+.footer-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-col h4 {
+  border-bottom: 2px solid #ffc107;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+/* سبک لینک‌ها */
+.footer-col ul li a {
+  color: #eee;
+  text-decoration: none;
+}
+.footer-col ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
   text-align: center;
-  padding: 10px 20px;
-  background-color: #f1f1f1;
-  margin-top: 50px;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #ccc;
 }
