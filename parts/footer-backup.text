@@ -1,0 +1,14 @@
+footer.html
+<footer>
+    طراح وب‌سایت: مهندس طاها سرگزی
+  </footer>
+</body>
+</html>
+
+footer.css
+footer {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  margin-top: 50px;
+}
