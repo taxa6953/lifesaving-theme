@@ -1,8 +1,9 @@
 /* ======= استایل اول ======= */
 body {
-  background: url('assets/images/send-texture.jpg') repeat;
-  background-size: auto; /* یا background-size: cover; اگر نمی‌خواهید تکرار شود */
-  font-family: 'Vazir', sans-serif;
+  background: url('assets/images/sand-texture.jpg') repeat;
+  background-size: auto; /* یا background-size: cover; اگر نمی‌خواهید تکرار شود */
+  color: #333;
+  font-family: 'Vazir', sans-serif;
 }
 
 /* هدر */
