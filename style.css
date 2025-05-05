@@ -360,9 +360,19 @@ a.filter-box:hover {
 .footer-col ul li a {
   color: #eee;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
+
+/* هنگام قرار گرفتن موس روی لینک */
 .footer-col ul li a:hover {
-  text-decoration: underline;
+  color: #ffd700;
+  text-decoration: none;
+}
+
+/* هنگام کلیک و بازدید از لینک */
+.footer-col ul li a:visited {
+  color: #ff9800;
+  text-decoration: none;
 }
 
 .footer-bottom {
