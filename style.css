@@ -374,7 +374,26 @@ a.filter-box:hover {
   color: #ff9800;
   text-decoration: none;
 }
+.footer-col ul li a {
+  color: #eee;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline; /* مهم: فقط متن لینک کلیک‌پذیر باشد */
+  background: transparent;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
 
+.footer-col ul li a:hover,
+.footer-col ul li a:focus {
+  color: #ffd700;
+  text-decoration: none;
+  outline: none;
+  background: transparent; /* حذف کادر سفید احتمالی */
+  box-shadow: none;
+}
 .footer-bottom {
   text-align: center;
   margin-top: 40px;
