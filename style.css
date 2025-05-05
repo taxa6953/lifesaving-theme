@@ -1,10 +1,11 @@
 /* ======= استایل اول ======= */
 body {
-  background: url('assets/images/send-texture.jpg') repeat;
-  background-size: auto; /* یا background-size: cover; اگر نمی‌خواهید تکرار شود */
-  color: #333;
-  font-family: 'Vazir', sans-serif;
-}
+      font-family: 'Vazir', sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
 
 /* هدر */
 .header {
