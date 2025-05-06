@@ -21,6 +21,82 @@ body {
   height: auto;
   object-fit: cover;
 }
+/* Wrapper مطابق عرض فوتر */
+.content-box-wrapper {
+  max-width: 1200px;    /* یا همان max-width که در .footer دارید */
+  margin: 0 auto;
+  padding: 40px 20px;   /* فاصله از اطراف */
+}
+
+/* باکس اصلی */
+.content-box {
+  background: #fff;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* لیست عناوین */
+.title-list {
+  display: flex;
+  gap: 10px;           /* فاصله نزدیک بین آیتم‌ها */
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
+}
+.title-list li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 8px;
+  transition: background 0.2s, transform 0.2s;
+}
+.title-list li img {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+}
+.title-list li span {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* حالت انتخاب‌شده */
+.title-list li.active {
+  background: rgba(0,123,255,0.1);
+  transform: translateY(-2px);
+}
+.title-list li.active span {
+  color: #007bff;
+}
+
+/* خط جداکننده پایین عناوین */
+.separator {
+  height: 1px;
+  background: #e0e0e0;
+  display: none;
+}
+.title-list.wrapped + .separator {
+  display: block;
+}
+
+/* محتوای نمایش */
+.content-display {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 20px;
+}
+
+/* وقتی باز است */
+.content-display.open {
+  padding: 20px;
+  max-height: 400px; /* تنظیم متناسب با محتوا */
+}
 }/* جست‌وجو */
 .search-box {
   display: flex;
