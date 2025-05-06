@@ -12,7 +12,75 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div w3-include-html="parts/header.html"></div>
+<!-- ======= هدر اپلی واکنش‌گرا ======= -->
+<div class="header-app">
+  <header>
+    <div class="navbar3">
+      <div class="logo3">لوگو</div>
+      <ul class="nav-items3" id="nav-items3">
+        <li class="nav-item3" data-target="menu-mac3">مک</li>
+        <li class="nav-item3" data-target="menu-iphone3">آیفون</li>
+        <li class="nav-item3" data-target="menu-watch3">ساعت</li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="mega-menu-wrapper3">
+    <div class="mega-menu3" id="menu-mac3">
+      <div class="column3">
+        <h4>مدل‌های مک</h4>
+        <a href="#">مک‌بوک ایر</a>
+        <a href="#">مک‌بوک پرو</a>
+        <a href="#">آی‌مک</a>
+      </div>
+      <div class="column3">
+        <h4>راهنما</h4>
+        <a href="#">مقایسه مدل‌ها</a>
+        <a href="#">خرید ویژه دانشجویان</a>
+      </div>
+    </div>
+
+    <div class="mega-menu3" id="menu-iphone3">
+      <div class="column3">
+        <h4>مدل‌های آیفون</h4>
+        <a href="#">آیفون ۱۵</a>
+        <a href="#">آیفون ۱۵ پرو</a>
+      </div>
+    </div>
+
+    <div class="mega-menu3" id="menu-watch3">
+      <div class="column3">
+        <h4>مدل‌های ساعت</h4>
+        <a href="#">سری ۹</a>
+        <a href="#">اولترا ۲</a>
+      </div>
+    </div>
+  </div>
+
+  <img src="header.png" alt="هدر" class="header-image3" />
+</div>
+
+<script>
+  const menuItems3 = document.querySelectorAll('.nav-item3');
+  const menus3     = document.querySelectorAll('.mega-menu3');
+
+  menuItems3.forEach(item => {
+    item.addEventListener('click', e => {
+      e.stopPropagation();
+      const target = item.dataset.target;
+      menus3.forEach(menu => {
+        if (menu.id === target) menu.classList.toggle('active');
+        else menu.classList.remove('active');
+      });
+    });
+  });
+
+  window.addEventListener('click', e => {
+    if (!e.target.closest('.nav-item3') && !e.target.closest('.mega-menu3')) {
+      menus3.forEach(menu => menu.classList.remove('active'));
+    }
+  });
+</script>
 </body> 
 </html>
 <!-- آخرین اخبار -->
