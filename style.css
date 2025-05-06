@@ -30,14 +30,15 @@ body {
   max-height: 70px;    /* ارتفاع نهایی در CSS */
   width: auto;         /* حفظ نسبت ابعاد */
   display: block;      /* حذف فاصله‌های بلوکی اضافی */
-  margin-right: 20px;  /* فاصله از اولین آیتم منو */
+  margin-right: 20px; /* فاصله از اولین آیتم منو */
+  margin-left: 5px;
 }
 
 /* آیتم‌های ناوبری: فاصله بین لوگو و اولین آیتم و تنظیم فاصله بین خود آیتم‌ها */
 .header-app .navbar3 {
   display: flex;
   align-items: center;
-  padding: 22px 30px;
+  padding: 10px 20px 10px 50px;
   gap: 30px;           /* فاصله‌ی یکنواخت بین لوگو و منو و بین آیتم‌های منو */
 }
 
