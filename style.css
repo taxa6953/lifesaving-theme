@@ -48,14 +48,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-.header-app .nav-item3 {
-  font-size: 20px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
 .header-app .nav-item3:hover {
   color: #0071e3;
 }
