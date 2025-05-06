@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>میأت نجات غریق و غواصی استان سیستان  و بلوچستان </title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- ==== هدر شما ==== -->
+  <header class="site-header">
+    <div class="header-overlay"></div>
+  </header>
 
+  <nav class="menu-bar">
+    <ul class="nav-list">
+      <li data-menu="register"><img src="icons/register.svg" alt=""><span>ثبت نام دوره‌ها</span></li>
+      <li data-menu="news"><img src="icons/news.svg" alt=""><span>اخبار</span></li>
+      <li data-menu="directives"><img src="icons/directives.svg" alt=""><span>بخشنامه‌ها</span></li>
+      <li data-menu="exams"><img src="icons/exams.svg" alt=""><span>آزمون‌ها</span></li>
+      <li data-menu="records"><img src="icons/records.svg" alt=""><span>ثبت سوابق</span></li>
+      <li data-menu="forms"><img src="icons/forms.svg" alt=""><span>فرم‌ها</span></li>
+    </ul>
+  </nav>
+
+  <div class="submenu-container"></div>
+
+  <main>
+    <!-- بقیهٔ محتوای سایت -->
+  </main>
+
+  <!-- ==== اینجا قبل از بسته شدن body ==== -->
+  <script>
+    document.querySelectorAll('.nav-list li').forEach(item => {
+      item.addEventListener('click', () => {
+        // ۱. نشانه‌گذاری آیتم فعال
+        document.querySelectorAll('.nav-list li').forEach(el => el.classList.remove('active'));
+        item.classList.add('active');
+
+        // ۲. نمایش زیرمنو
+        const submenu = document.querySelector('.submenu-container');
+        if (submenu.classList.contains('open') && submenu.getAttribute('data-for') === item.dataset.menu) {
+          submenu.classList.remove('open');
+          submenu.removeAttribute('data-for');
+          submenu.innerHTML = '';
+        } else {
+          submenu.setAttribute('data-for', item.dataset.menu);
+          submenu.innerHTML = getSubmenuContent(item.dataset.menu);
+          submenu.classList.add('open');
+        }
+      });
+    });
+
+    function getSubmenuContent(key) {
+      switch (key) {
+        case 'register':
+          return `<div class="submenu">
+                    <p>فرم ثبت نام دوره‌های آموزشی</p>
+                  </div>`;
+        case 'news':
+          return `<div class="submenu">
+                    <p>لیست آخرین اخبار</p>
+                  </div>`;
+        // … سایر موارد …
+        default:
+          return `<div class="submenu"><p>محتوا در دسترس نیست.</p></div>`;
+      }
+    }
+  </script>
+</body>
+</html>
