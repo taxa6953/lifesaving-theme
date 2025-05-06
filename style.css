@@ -8,10 +8,9 @@ body {
     }
 /* ========== هدر و مگا منو ========== */
 
-    * {
+    {
       box-sizing: border-box;
     }
-    body {
       margin: 0;
       font-family: 'Vazir', sans-serif; /* تغییر فونت به وزیبا */
       background-color: #fff;
