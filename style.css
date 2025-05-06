@@ -7,15 +7,23 @@ body {
       direction: rtl;
     }
 /* هدر */
+/* هدر واکنش‌گرا با نسبت ثابت */
 .header {
   width: 100%;
+  /* نسبت 16:6 (یا هر نسبتی که برایتان مناسب است) */
+  aspect-ratio: 16 / 6;
   overflow: hidden;
+  position: relative;
 }
+
+/* تصویر هدر تمام فضای کانتینر را بپوشاند */
 .header-image {
-  display: block;
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+  display: block;
 }
 }/* جست‌وجو */
 .search-box {
