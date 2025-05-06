@@ -23,19 +23,21 @@ body {
 .header-app .navbar3 {
   display: flex;
   align-items: center;
-  gap: 2rem;                  /* فاصله بین لوگو و منو و آیتم‌ها */
-  width: 100%;
-  max-width: 1200px;          /* عرض ماکزیمم هدر (قابل حذف یا تغییر) */
-  margin: 0 auto;
+  /* برای فاصله از لبه‌ی راست صفحه: padding-inline-start (چپ) و padding-inline-end (راست) */
+  padding: 10px 24px;  /* بالا/پایین 10px و چپ/راست 24px */
+  gap: 2rem;           /* فاصله یکنواخت بین لوگو و آیتم‌های منو */
 }
-
 .header-app .logo3 {
-  height: 50px;               /* ارتفاع لوگو */
-  width: auto;                /* حفظ نسبت تصویر */
-  flex-shrink: 0;             /* جلوگیری از کوچک شدن لوگو */
-  margin-right: 1rem;         /* فاصله از اولین آیتم منو */
+-  max-height: 70px;
+-  width: auto;
+-  display: block;
+-  margin-right: 20px; /* ← این خط حذف شود */
+-  margin-left: 5px;   /* ← و این هم حذف شود */
++  max-height: 70px;
++  width: auto;
++  display: block;
++  /* مارجین حذف شد، جای خود را به gap می‌دهیم */
 }
-
 .header-app .nav-items3 {
   display: flex;
   gap: 1.5rem;                /* فاصله بین آیتم‌های منو */
