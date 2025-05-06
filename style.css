@@ -7,27 +7,6 @@ body {
       direction: rtl;
     }
 /* هدر */
-/* عرض هدر مطابق فوتر */
-.header-wrapper {
-  max-width: 40px 20px;   /* همین عددی که در .footer دارید */
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-/* تصویر تمام عرض wrapper */
-.header-image {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-/* Wrapper مطابق عرض فوتر */
-.content-box-wrapper {
-  max-width: 1200px;    /* یا همان max-width که در .footer دارید */
-  margin: 0 auto;
-  padding: 40px 20px;   /* فاصله از اطراف */
-}
-
 
 /* بخش عنوان + دکمه بیشتر */
 .section-header {
