@@ -27,22 +27,18 @@ body {
 }
 
 .header-app .logo3 {
--  max-height: 70px;
--  width: auto;
--  display: block;
--  margin-right: 20px; /* ← این خط حذف شود */
--  margin-left: 5px;   /* ← و این هم حذف شود */
-+  max-height: 70px;
-+  width: auto;
-+  display: block;
-+  /* مارجین حذف شد، جای خود را به gap می‌دهیم */
+  max-height: 70px;
+  width: auto;
+  display: block;
+  margin-right: 20px;
+  margin-left: 5px;
 }
+
 .header-app .navbar3 {
   display: flex;
   align-items: center;
-  /* برای فاصله از لبه‌ی راست صفحه: padding-inline-start (چپ) و padding-inline-end (راست) */
-  padding: 10px 24px;  /* بالا/پایین 10px و چپ/راست 24px */
-  gap: 2rem;           /* فاصله یکنواخت بین لوگو و آیتم‌های منو */
+  padding: 10px 20px 10px 50px;
+  gap: 30px;
 }
 .header-app .nav-items3 {
   display: flex;
