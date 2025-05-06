@@ -11,13 +11,12 @@ body {
     {
       box-sizing: border-box;
     }
-      margin: 0;
+      .margin: 0;
       font-family: 'Vazir', sans-serif; /* تغییر فونت به وزیبا */
       background-color: #fff;
       direction: rtl;
     }
-
-    header {
+     .header {
       background-color: #fff;
       border-bottom: 1px solid #ddd;
       position: sticky;
