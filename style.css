@@ -6,43 +6,41 @@ body {
       padding: 0;
       direction: rtl;
     }
-
-/* —————————— کلیات بدنه —————————— */
-body {
+/* ======== کلیات ======== */
+* { box-sizing: border-box; }
   margin: 0;
+  padding: 0;
+  font-family: 'Vazir', sans-serif;
   background-color: #F5F5F5;
-  font-family: sans-serif;
-  line-height: 1.4;
+  direction: rtl;
 }
 
-/* —————————— هدر با تصویر —————————— */
+/* ======== هدر ======== */
 .site-header {
   position: relative;
   height: 50vh;
   min-height: 300px;
-  background: url('/assets/images/header.png') center/cover no-repeat;
+  background:
+    url('/assets/images/header.png') center/cover no-repeat,
+    linear-gradient(to bottom, rgba(245,245,245,0) 70%, #F5F5F5 100%);
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   overflow: hidden;
 }
-
-/* اگر خواستید اورلِی تیره برای خوانایی بیشتر */
 .header-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.2);
 }
 
-/* —————————— منوی اصلی —————————— */
+/* ======== منو ======== */
 .menu-bar {
   background-color: #fff;
-  border-top: 4px solid rgb(146,176,174);
   position: relative;
   z-index: 10;
-  padding: 8px 0;
+  padding: 6px 0;
+  border-top: 4px solid rgb(146,176,174);
 }
-
-/* لیست آیتم‌ها */
 .nav-list {
   display: flex;
   flex-wrap: wrap;
@@ -51,10 +49,31 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  position: relative; /* برای separator */
+  position: relative;
 }
+.nav-list li {
+  flex: 1 1 100px;
+  max-width: 160px;
+  text-align: center;
+  padding: 6px 4px;
+  cursor: pointer;
+  position: relative;
+}
+.nav-list li img {
+  width: 28px;
+  height: 28px;
+  margin: 0 auto 2px;
+}
+.nav-list li span {
+  display: block;
+  font-size: 0.85rem;
+  margin: 0;
+  color: #333;
+}
+/* فاصله کم بین h1 و h2 */
+.header-overlay + .menu-bar + .nav-list {} /* فقط برای وضوح ساختار */
 
-/* جداکننده بین دو ردیف (اگر wrap شد) */
+/* جداکننده بین دو سطر فقط وقتی wrap شده */
 .nav-list::before {
   content: "";
   position: absolute;
@@ -63,31 +82,10 @@ body {
   right: 5%;
   height: 1px;
   background: #e0e0e0;
-  pointer-events: none;
-  display: block;
+  display: none;
 }
-
-/* هر آیتم */
-.nav-list li {
-  flex: 1 1 100px;
-  max-width: 160px;
-  text-align: center;
-  padding: 8px 4px;
-  cursor: pointer;
-  position: relative;
-}
-
-.nav-list li img {
-  width: 32px;
-  height: 32px;
+.nav-list.wrapped::before {
   display: block;
-  margin: 0 auto 4px;
-}
-
-.nav-list li span {
-  display: block;
-  font-size: 0.9rem;
-  color: #333;
 }
 
 /* زیرخط آیتم فعال */
@@ -102,15 +100,7 @@ body {
   border-radius: 2px;
 }
 
-/* واکنش‌گرا */
-@media (max-width: 600px) {
-  .nav-list li {
-    flex: 1 1 45%;
-    max-width: none;
-  }
-}
-
-/* —————————— کانتینر زیرمنو —————————— */
+/* ======== زیرمنو ======== */
 .submenu-container {
   background-color: #fff;
   overflow: hidden;
@@ -120,11 +110,16 @@ body {
   border-bottom-right-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-
-/* وقتی باز شد */
 .submenu-container.open {
-  max-height: 500px; /* به اندازه‌ی محتوای شما تنظیم شود */
-  transition: max-height 0.4s ease;
+  max-height: 400px; /* متناسب با محتوا */
+}
+
+/* ======== واکنش‌گرایی ======== */
+@media (max-width: 600px) {
+  .nav-list li {
+    flex: 1 1 45%;
+    max-width: none;
+  }
 }
 
 /* جست‌وجو */
