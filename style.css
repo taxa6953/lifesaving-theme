@@ -7,29 +7,124 @@ body {
       direction: rtl;
     }
 
-/* هدر */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #fff;
-  padding: 10px 20px;
-  border-bottom: 1px solid #ccc;
-}
-
-.logo {
-  width: 48px;
-  height: auto;
-}
-
-.header-text h1 {
-  font-size: 20px;
-  margin: 0 0 5px 0;
-}
-.header-text h2 {
-  font-size: 14px;
-  color: #666;
+/* —————————— کلیات بدنه —————————— */
+body {
   margin: 0;
+  background-color: #F5F5F5;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+/* —————————— هدر با تصویر —————————— */
+.site-header {
+  position: relative;
+  height: 50vh;
+  min-height: 300px;
+  background: url('assets/header-bg.jpg') center/cover no-repeat;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  overflow: hidden;
+}
+
+/* اگر خواستید اورلِی تیره برای خوانایی بیشتر */
+.header-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+/* —————————— منوی اصلی —————————— */
+.menu-bar {
+  background-color: #fff;
+  border-top: 4px solid rgb(146,176,174);
+  position: relative;
+  z-index: 10;
+  padding: 8px 0;
+}
+
+/* لیست آیتم‌ها */
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative; /* برای separator */
+}
+
+/* جداکننده بین دو ردیف (اگر wrap شد) */
+.nav-list::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  right: 5%;
+  height: 1px;
+  background: #e0e0e0;
+  pointer-events: none;
+  display: block;
+}
+
+/* هر آیتم */
+.nav-list li {
+  flex: 1 1 100px;
+  max-width: 160px;
+  text-align: center;
+  padding: 8px 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-list li img {
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin: 0 auto 4px;
+}
+
+.nav-list li span {
+  display: block;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* زیرخط آیتم فعال */
+.nav-list li.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  right: 20%;
+  height: 3px;
+  background: rgb(146,176,174);
+  border-radius: 2px;
+}
+
+/* واکنش‌گرا */
+@media (max-width: 600px) {
+  .nav-list li {
+    flex: 1 1 45%;
+    max-width: none;
+  }
+}
+
+/* —————————— کانتینر زیرمنو —————————— */
+.submenu-container {
+  background-color: #fff;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* وقتی باز شد */
+.submenu-container.open {
+  max-height: 500px; /* به اندازه‌ی محتوای شما تنظیم شود */
+  transition: max-height 0.4s ease;
 }
 
 /* جست‌وجو */
