@@ -20,7 +20,7 @@ body {
   position: relative;
   height: 50vh;
   min-height: 300px;
-  background: url('/assets/images/header.png') center/cover no-repeat;
+  background: url('assets/images/header.png') center/cover no-repeat;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
   overflow: hidden;
