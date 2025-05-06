@@ -1,12 +1,13 @@
-/* ======= استایل اول ======= */
+/* ======= استایل کلی ======= */
 body {
-      font-family: 'Vazir', sans-serif;
-      background: #f5f5f5;
-      margin: 0;
-      padding: 0;
-      direction: rtl;
-    }
-/* ======= استایل هدر اپلی واکنش‌گرا ======= */
+  font-family: 'Vazir', sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+/* ======= استایل هدر اپلیکیشن واکنش‌گرا ======= */
 .header-app * {
   box-sizing: border-box;
 }
@@ -25,17 +26,19 @@ body {
   z-index: 1000;
 }
 
+.header-app .logo3 {
+  max-height: 70px;
+  width: auto;
+  display: block;
+  margin-right: 20px;
+  margin-left: 5px;
+}
+
 .header-app .navbar3 {
   display: flex;
   align-items: center;
-  padding: 22px 30px;
-}
-
-/* لوگو: حداکثر ارتفاع و حفظ نسبت تصویر */
-.header-app .logo3 {
-  max-height: 50px;   /* مطابق نیازتون تنظیم کنید */
-  width: auto;        /* تا نسبت ابعاد حفظ شود */
-  display: block;     /* برای حذف فاصله‌های اضافی */
+  padding: 10px 20px 10px 50px;
+  gap: 30px;
 }
 
 .header-app .nav-items3 {
@@ -44,13 +47,6 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.header-app .nav-item3 {
-  font-size: 20px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: color 0.2s ease;
 }
 
 .header-app .nav-item3:hover {
@@ -115,7 +111,8 @@ body {
   width: 100%;
   height: auto;
 }
-/*====== بخش عنوان + دکمه بیشتر ======*/
+
+/* ====== بخش عنوان + دکمه بیشتر ====== */
 .section-header {
   display: flex;
   justify-content: space-between;
@@ -123,20 +120,17 @@ body {
   margin: 20px;
 }
 
-/* عنوان اصلی */
 .section-title {
   font-size: 24px;
   font-weight: bold;
 }
 
-/* زیرعنوان */
 .subtitle {
   font-size: 18px;
   color: #666;
   margin-top: 5px;
 }
 
-/* دکمه بیشتر */
 .more-button {
   display: flex;
   align-items: center;
@@ -150,6 +144,7 @@ body {
   width: 16px;
   height: 16px;
 }
+
 /* کارت‌ها */
 .card-section,
 .cards-container-2 {
@@ -159,34 +154,37 @@ body {
   padding: 0 20px 30px;
   scroll-snap-type: x mandatory;
 }
+
 .card {
   width: 100%;
   max-width: 200px;
   background: white;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
   scroll-snap-align: start;
   text-decoration: none;
   color: inherit;
 }
+
 .card img {
   width: 100%;
   border-radius: 8px;
 }
+
 .card-title {
   font-weight: bold;
   font-size: 14px;
   margin-top: 8px;
 }
+
 .card-text {
   font-size: 13px;
   color: #555;
 }
 
 /* ======= استایل دوم (طراحی جدید) ======= */
-/* عنوان‌ها و زیرعنوان */
 .section-title-2 {
   font-family: 'IranYekan', sans-serif;
   font-size: 22px;
@@ -194,6 +192,7 @@ body {
   margin-bottom: 5px;
   padding: 0 20px;
 }
+
 .subtitle-2 {
   font-family: 'IranYekan', sans-serif;
   font-size: 15px;
@@ -206,23 +205,26 @@ body {
 .cards-container-2::-webkit-scrollbar {
   display: none;
 }
+
 .modern-card-2 {
   flex: 0 0 340px;
   height: 420px;
   background-color: #fff;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: relative;
   scroll-snap-align: start;
   user-select: none;
 }
+
 .card-image-2 {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
 }
+
 .glass-bar-2 {
   position: absolute;
   bottom: 0;
@@ -237,12 +239,14 @@ body {
   height: 60px;
   border-radius: 0 0 12px 12px;
 }
+
 .logo-area-2 {
   display: flex;
   align-items: center;
   flex-grow: 1;
   overflow: hidden;
 }
+
 .logo-2 {
   width: 50px;
   height: 50px;
@@ -250,11 +254,13 @@ body {
   margin-left: 12px;
   object-fit: cover;
 }
+
 .text-content-2 {
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
+
 .event-title-2 {
   font-family: 'IranYekan', sans-serif;
   font-size: 17px;
@@ -265,6 +271,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .event-description-2 {
   font-family: 'IranYekan', sans-serif;
   font-size: 14px;
@@ -273,46 +280,55 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/*====== اپلیکیشن ======*/
+
+/* ====== اپلیکیشن ====== */
 .container {
   background: white;
   border-radius: 20px;
   padding: 20px;
   width: 100%;
   max-width: 360px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
 }
+
 .app {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
 }
+
 .app + .app {
   border-top: 1px solid #eee;
 }
+
 .app-info {
   display: flex;
   align-items: center;
 }
+
 .app img {
   width: 50px;
   height: 50px;
   border-radius: 12px;
   margin-left: 10px;
 }
+
 .app-text {
   display: flex;
   flex-direction: column;
 }
+
 .app-title {
   font-weight: bold;
 }
+
 .app-subtitle {
   font-size: 12px;
   color: gray;
 }
+
 .button {
   background-color: #e0e0e0;
   border: none;
@@ -322,38 +338,44 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
+
 .button.update {
   background-color: #007aff;
   color: white;
 }
 
-/* ریسپانسیو */
+/* ======= ریسپانسیو ======= */
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
     max-width: 160px;
     margin: 0 auto;
   }
+
   .modern-card-2 {
     flex: 0 0 90%;
     max-width: 90%;
   }
+
   .container {
     width: 90%;
   }
+
   .header-text h1 {
     font-size: 18px;
   }
+
   .header-text h2 {
     font-size: 13px;
   }
+
   .search-box {
     max-width: calc(100% - 30px);
     margin: 15px;
   }
 }
 
-/*====== فوتر ======*/
+/* ====== فوتر ====== */
 .footer {
   background: url('6E5401CF-9875-4F31-A5F1-5B2A2A1F9D86.jpeg') no-repeat center center/cover;
   color: white;
@@ -397,29 +419,11 @@ body {
   margin-bottom: 10px;
 }
 
-/* سبک لینک‌ها */
 .footer-col ul li a {
   color: #eee;
   text-decoration: none;
   transition: color 0.3s ease;
-}
-
-/* هنگام قرار گرفتن موس روی لینک */
-.footer-col ul li a:hover {
-  color: #ffd700;
-  text-decoration: none;
-}
-
-/* هنگام کلیک و بازدید از لینک */
-.footer-col ul li a:visited {
-  color: #ff9800;
-  text-decoration: none;
-}
-.footer-col ul li a {
-  color: #eee;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  display: inline; /* مهم: فقط متن لینک کلیک‌پذیر باشد */
+  display: inline;
   background: transparent;
   outline: none;
   padding: 0;
@@ -432,9 +436,15 @@ body {
   color: #ffd700;
   text-decoration: none;
   outline: none;
-  background: transparent; /* حذف کادر سفید احتمالی */
+  background: transparent;
   box-shadow: none;
 }
+
+.footer-col ul li a:visited {
+  color: #ff9800;
+  text-decoration: none;
+}
+
 .footer-bottom {
   text-align: center;
   margin-top: 40px;
