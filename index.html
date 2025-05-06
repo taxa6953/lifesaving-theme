@@ -19,8 +19,15 @@
     .then(res => res.text())
     .then(data => {
       document.getElementById('header-placeholder').innerHTML = data;
+
+      // پس از بارگذاری header.html، فایل جاوااسکریپت مربوط به هدر را نیز اضافه کن
+      const script = document.createElement('script');
+      script.src = 'assets/js/header.js'; // مسیر صحیح فایل JS
+      script.defer = true;
+      document.body.appendChild(script);
     });
 </script>
+
 
 </body>
   
