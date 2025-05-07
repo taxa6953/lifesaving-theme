@@ -41,7 +41,7 @@ body {
 }
 
 .header-app .logo3 {
-  max-height: 40px;
+  max-height: 50px;
   width: auto;
   display: block;
   margin-right: 20px;
@@ -75,7 +75,7 @@ body {
 .header-app .mega-menu3 {
   display: none;
   position: fixed;
-  top: 30px;
+  top: 60px;
   right: 0;
   left: 0;
   background: rgba(255, 255, 255, 0.9);
