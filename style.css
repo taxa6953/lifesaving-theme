@@ -124,28 +124,7 @@ body {
   width: 100%;
   height: auto;
 }
-.header-app .hamburger-btn {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 60px;     /* افزایش عرض */
-  height: 60px;    /* افزایش ارتفاع */
-  background: none;
-  border: none;
-  cursor: pointer;
-  margin-right: 10px;
-  z-index: 1001;
-}
 
-.header-app .hamburger-btn span {
-  display: block;
-  width: 35px;     /* افزایش عرض خط‌ها */
-  height: 4px;     /* افزایش ضخامت خط‌ها */
-  background-color: #333;
-  margin: 6px 0;   /* فاصله بیشتر بین خط‌ها */
-  transition: all 0.3s ease;
-}
 
 /* ====== بخش عنوان + دکمه بیشتر ====== */
 .section-header {
