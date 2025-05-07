@@ -134,35 +134,6 @@ body {
   color: #333;
 }
 
-/* موبایل: مخفی‌سازی آیتم‌ها و نمایش دکمه */
-@media (max-width: 768px) {
-  .header-app .nav-items3 {
-    display: none;
-    flex-direction: column;
-    background: white;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 100%;
-    padding: 10px 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    z-index: 999;
-  }
-
-  .header-app .nav-items3.active {
-    display: flex;
-  }
-
-  .header-app .hamburger-btn {
-    display: block;
-    margin-right: auto;
-  }
-
-  .header-app .navbar3 {
-    justify-content: space-between;
-    padding: 10px 20px;
-  }
-}
 /* ====== بخش عنوان + دکمه بیشتر ====== */
 .section-header {
   display: flex;
