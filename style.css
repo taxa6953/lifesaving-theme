@@ -6,7 +6,21 @@ body {
   padding: 0;
   direction: rtl;
 }
+  direction: rtl;
+  text-align: right;
+}
 
+.container {
+  float: right;
+}
+
+.menu li {
+  float: right;
+}
+
+.breadcrumb {
+  direction: rtl;
+}
 /* ======= استایل هدر اپلیکیشن واکنش‌گرا ======= */
 .header-app * {
   box-sizing: border-box;
