@@ -75,13 +75,6 @@
       });
     });
   });
-const hamburgerBtn = document.getElementById('hamburgerBtn');
-const navItems3 = document.getElementById('nav-items3');
-
-hamburgerBtn.addEventListener('click', e => {
-  e.stopPropagation();
-  navItems3.classList.toggle('active');
-});
   window.addEventListener('click', e => {
     if (!e.target.closest('.nav-item3') && !e.target.closest('.mega-menu3')) {
       menus3.forEach(menu => menu.classList.remove('active'));
