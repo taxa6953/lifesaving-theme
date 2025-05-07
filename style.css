@@ -342,6 +342,16 @@ body {
   background-color: #007aff;
   color: white;
 }
+.more-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.more-button-wrapper .button {
+  width: 100%;
+  text-align: center;
+}
 
 /* ======= ریسپانسیو ======= */
 @media screen and (max-width: 768px) {
