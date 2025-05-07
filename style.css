@@ -41,18 +41,18 @@ body {
 }
 
 .header-app .logo3 {
-  max-height: 70px;
+  max-height: 50px;
   width: auto;
   display: block;
-  margin-right: 15px;
+  margin-right: 20px;
   margin-left: 0px;
 }
 
 .header-app .navbar3 {
   display: flex;
   align-items: center;
-  padding: 10px 15px 10px 50px;
-  gap: 30px;
+  padding: 10px 20px 10px 50px;
+  gap: 20px;
 }
 .header-app .nav-items3 {
   display: flex;
