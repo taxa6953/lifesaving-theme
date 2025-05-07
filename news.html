@@ -1,54 +1,324 @@
-<!-- news.html -->
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>اخبار زلزله</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>اخبار</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* ریست ساده */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #f5f5f8;
+      font-family: 'Vazir', sans-serif;
+      padding: 20px;
+    }
+
+    /* کانتینر اصلی */
+    .news-container {
+      background: #fff;
+      max-width: 400px;
+      margin: 0 auto;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    /* هدر بخش */
+    .news-header {
+      text-align: right;
+      margin-bottom: 16px;
+    }
+    .news-header h2 {
+      font-size: 1.6rem;
+      margin-bottom: 4px;
+    }
+    .news-header p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    /* آیتم‌های خبر */
+    .news-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
+    /* خط جداکننده ضخیم */
+    .news-item + .news-item {
+      border-top: 2px solid #e0e0e0;
+    }
+
+    .news-thumb {
+      flex: 0 0 80px;
+      height: 80px;
+      margin-left: 12px;
+    }
+    .news-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+    .news-thumb img:hover {
+      transform: scale(1.05);
+    }
+
+    .news-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      text-align: right;
+    }
+    .news-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #000;
+    }
+    .news-summary {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .news-date {
+      font-size: 0.85rem;
+      color: #999;
+    }
+
+    .news-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    .news-actions .news-date {
+      /* تاریخ دوباره اینجا هم */
+      font-size: 0.8rem;
+      color: #888;
+    }
+    .btn-details {
+      background: #e0e0e0;
+      color: #007aff;
+      border: none;
+      border-radius: 14px;
+      padding: 6px 14px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background 0.2s ease;
+      text-decoration: none;
+    }
+    .btn-details:hover {
+      background: #d0d0d0;
+    }
+
+    /* دکمه نمایش بیشتر */
+    .load-more {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .btn-load {
+      background: #007aff;
+      color: #fff;
+      border: none;
+      border-radius: 14px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+    .btn-load:hover {
+      background: #005bb5;
+    }
+    /* دکمه بازگشت */
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  margin-bottom: 12px; /* فاصله از عنوان */
+}
+
+.back-btn img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.back-btn:hover {
+  background-color: #d0d0d0;
+}
+
+  </style>
 </head>
 <body>
 
-<!-- زلزله‌های استان (۱۴۰۴) -->
-<div class="section-header">
-  <div>
-    <div class="section-title">زلزله‌های استان (۱۴۰۴)</div>
-    <div class="subtitle">آخرین گزارش‌ها از مناطق زلزله‌خیز سیستان و بلوچستان</div>
-  </div>
-</div>
+  <div class="news-container">
+    <div class="news-header">
+      <div class="news-header">
 
-<div class="cards-container-2">
-  <div class="modern-card-2">
-    <div class="card-image-2" style="background-image: url('assets/image-card.jpg');"></div>
-    <div class="glass-bar-2">
-      <div class="logo-area-2">
-        <img src="assets/mls-logo.png" alt="لوگو" class="logo-2">
-        <div class="text-content-2">
-          <div class="event-title-2">1404/01/15</div>
-          <div class="event-description-2">گشت، استان سیستان و بلوچستان</div>
-        </div>
-      </div>
-      <a href="earthquake/card1/index.html">
-        <button class="button">جزئیات</button>
-      </a>
+      <h2>اخبار</h2>
+  <!-- دکمه بازگشت -->
+  <a href="index.html" class="back-btn">
+    <img src="https://via.placeholder.com/24x24.gif" alt="بازگشت" />
+    بازگشت
+  </a>
     </div>
-  </div>
 
-  <div class="modern-card-2">
-    <div class="card-image-2" style="background-image: url('assets/image-card2.jpg');"></div>
-    <div class="glass-bar-2">
-      <div class="logo-area-2">
-        <img src="assets/mls-logo2.png" alt="لوگو" class="logo-2">
-        <div class="text-content-2">
-          <div class="event-title-2">1404/01/12</div>
-          <div class="event-description-2">خاش، استان سیستان و بلوچستان</div>
-        </div>
+    <!-- تکرار کنید تا ۱۰ خبر -->
+    <div class="news-item">
+      <div class="news-thumb">
+        <img src="https://via.placeholder.com/80" alt="خبر یک">
       </div>
-      <a href="earthquake/card2/index.html">
-        <button class="button">جزئیات</button>
-      </a>
+      <div class="news-body">
+        <div class="news-title">خبر یک</div>
+        <div class="news-summary">توضیح خبر یک</div>
+      </div>
+      <div class="news-actions">
+        <div class="news-date">۱ اردیبهشت ۱۴۰۴</div>
+        <a href="#" class="btn-details">جزئیات</a>
+      </div>
     </div>
+
+    <div class="news-item">
+      <div class="news-thumb">
+        <img src="https://via.placeholder.com/80" alt="خبر دو">
+      </div>
+      <div class="news-body">
+        <div class="news-title">خبر دو</div>
+        <div class="news-summary">توضیح خبر دو</div>
+      </div>
+      <div class="news-actions">
+        <div class="news-date">۲ اردیبهشت ۱۴۰۴</div>
+        <a href="#" class="btn-details">جزئیات</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-thumb">
+        <img src="https://via.placeholder.com/80" alt="خبر سه">
+      </div>
+      <div class="news-body">
+        <div class="news-title">خبر سه</div>
+        <div class="news-summary">توضیح خبر سه</div>
+      </div>
+      <div class="news-actions">
+        <div class="news-date">۳ اردیبهشت ۱۴۰۴</div>
+        <a href="#" class="btn-details">جزئیات</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-thumb">
+        <img src="https://via.placeholder.com/80" alt="خبر چهار">
+      </div>
+      <div class="news-body">
+        <div class="news-title">خبر چهار</div>
+        <div class="news-summary">توضیح خبر چهار</div>
+      </div>
+      <div class="news-actions">
+        <div class="news-date">۴ اردیبهشت ۱۴۰۴</div>
+        <a href="#" class="btn-details">جزئیات</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-thumb">
+        <img src="https://via.placeholder.com/80" alt="خبر پنج">
+      </div>
+      <div class="news-body">
+        <div class="news-title">خبر پنج</div>
+        <div class="news-summary">توضیح خبر پنج</div>
+      </div>
+      <div class="news-actions">
+        <div class="news-date">۵ اردیبهشت ۱۴۰۴</div>
+        <a href="#" class="btn-details">جزئیات</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-thumb">
+        <img src="https://via.placeholder.com/80" alt="خبر شش">
+      </div>
+      <div class="news-body">
+        <div class="news-title">خبر شش</div>
+        <div class="news-summary">توضیح خبر شش</div>
+      </div>
+      <div class="news-actions">
+        <div class="news-date">۶ اردیبهشت ۱۴۰۴</div>
+        <a href="#" class="btn-details">جزئیات</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-thumb">
+        <img src="https://via.placeholder.com/80" alt="خبر هفت">
+      </div>
+      <div class="news-body">
+        <div class="news-title">خبر هفت</div>
+        <div class="news-summary">توضیح خبر هفت</div>
+      </div>
+      <div class="news-actions">
+        <div class="news-date">۷ اردیبهشت ۱۴۰۴</div>
+        <a href="#" class="btn-details">جزئیات</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-thumb">
+        <img src="https://via.placeholder.com/80" alt="خبر هشت">
+      </div>
+      <div class="news-body">
+        <div class="news-title">خبر هشت</div>
+        <div class="news-summary">توضیح خبر هشت</div>
+      </div>
+      <div class="news-actions">
+        <div class="news-date">۸ اردیبهشت ۱۴۰۴</div>
+        <a href="#" class="btn-details">جزئیات</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-thumb">
+        <img src="https://via.placeholder.com/80" alt="خبر نه">
+      </div>
+      <div class="news-body">
+        <div class="news-title">خبر نه</div>
+        <div class="news-summary">توضیح خبر نه</div>
+      </div>
+      <div class="news-actions">
+        <div class="news-date">۹ اردیبهشت ۱۴۰۴</div>
+        <a href="#" class="btn-details">جزئیات</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="news-thumb">
+        <img src="https://via.placeholder.com/80" alt="خبر ده">
+      </div>
+      <div class="news-body">
+        <div class="news-title">خبر ده</div>
+        <div class="news-summary">توضیح خبر ده</div>
+      </div>
+      <div class="news-actions">
+        <div class="news-date">۱۰ اردیبهشت ۱۴۰۴</div>
+        <a href="#" class="btn-details">جزئیات</a>
+      </div>
+    </div>
+
+
   </div>
-</div>
 
 </body>
 </html>
