@@ -12,74 +12,21 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<!-- ======= هدر اپلی واکنش‌گرا ======= -->
-<div class="header-app">
-  <header>
-    <div class="navbar3">
-      <img src="assets/images/logo.png" alt="لوگو" class="logo3" />
-      <ul class="nav-items3" id="nav-items3">
-        <li class="nav-item3" data-target="menu-namee">بخشنامه ها</li>
-        <li class="nav-item3" data-target="menu-forme">دانلود فرم ها</li>
-        <li class="nav-item3" data-target="menu-doreh">دوره های آموزشی</li>
-      </ul>
-    </div>
-  </header>
+<!-- اضافه کردن w3.js -->
+<script src="https://www.w3schools.com/lib/w3.js"></script>
 
-  <div class="mega-menu-wrapper3">
-    <div class="mega-menu3" id="menu-namee">
-      <div class="column3">
-        <h4>فدراسیون</h4>
-        <a href="#">بخشنامه یک</a>
-        <a href="#">بخشنامه دو</a>
-        <a href="#">بخشنامه سه</a>
-      </div>
-      <div class="column3">
-        <h4>هیأت</h4>
-        <a href="#">بخشنامه یک</a>
-        <a href="#">بخسنامه دو</a>
-      </div>
-    </div>
+<!-- اضافه کردن هدر -->
+<div w3-include-html="parts/header.html"></div>
 
-    <div class="mega-menu3" id="menu-forme">
-      <div class="column3">
-        <h4>دانلود فرم ها</h4>
-        <a href="#">فرم یک</a>
-        <a href="#">فرم دو</a>
-      </div>
-    </div>
-
-    <div class="mega-menu3" id="menu-doreh">
-      <div class="column3">
-        <h4>دوره های آموزشی</h4>
-        <a href="#">دوره یک</a>
-        <a href="#">دوره دوم</a>
-      </div>
-    </div>
-  </div>
-
-  <img src="assets/images/header.jpeg" alt="هدر" class="header-image3" />
-</div>
-
+<!-- اجرای includeHTML و سپس بارگذاری فایل JS -->
 <script>
-  const menuItems3 = document.querySelectorAll('.nav-item3');
-  const menus3     = document.querySelectorAll('.mega-menu3');
-
-  menuItems3.forEach(item => {
-    item.addEventListener('click', e => {
-      e.stopPropagation();
-      const target = item.dataset.target;
-      menus3.forEach(menu => {
-        if (menu.id === target) menu.classList.toggle('active');
-        else menu.classList.remove('active');
-      });
-    });
-  });
-  window.addEventListener('click', e => {
-    if (!e.target.closest('.nav-item3') && !e.target.closest('.mega-menu3')) {
-      menus3.forEach(menu => menu.classList.remove('active'));
-    }
+  w3.includeHTML(() => {
+    const script = document.createElement('script');
+    script.src = 'assets/js/menu.js'; // مسیر صحیح فایل
+    document.body.appendChild(script);
   });
 </script>
+</div>
 </body> 
 </html>
 <!-- آخرین اخبار -->
