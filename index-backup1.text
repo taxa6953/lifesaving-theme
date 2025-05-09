@@ -12,21 +12,23 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<!-- اضافه کردن w3.js -->
+<script src="https://www.w3schools.com/lib/w3.js"></script>
 
-  <!-- هدر -->
+<!-- اضافه کردن هدر -->
 <div w3-include-html="parts/header.html"></div>
 
-  <!-- جست‌وجو -->
-  <div class="search-box">
-    <input type="text" placeholder="جست و جو..." />
-    <img src="assets/images/search.gif" alt="جست‌وجو" />
-  </div>
-
-  <!-- فیلترهای سریع -->
-  <div class="quick-filters">
-    <a href="earthquake-top/index.html" class="filter-box">دانلود فرم ها</a>
-  </div>
-
+<!-- اجرای includeHTML و سپس بارگذاری فایل JS -->
+<script>
+  w3.includeHTML(() => {
+    const script = document.createElement('script');
+    script.src = 'assets/js/menu.js'; // مسیر صحیح فایل
+    document.body.appendChild(script);
+  });
+</script>
+</div>
+</body> 
+</html>
 <!-- آخرین اخبار -->
 <div class="section-header">
   <div>
@@ -40,7 +42,7 @@
     <div class="card-image-2" style="background-image: url('assets/images/news/image-card1.png');"></div>
     <div class="glass-bar-2">
       <div class="logo-area-2">
-        <img src="assets/mls-logo.png" alt="لوگو" class="logo-2">
+        <img src="assets/images/logo.png" alt="لوگو" class="logo-2">
         <div class="text-content-2">
           <div class="event-title-2">عنوان یک</div>
           <div class="event-description-2">توضیحات یک</div>
@@ -56,7 +58,7 @@
     <div class="card-image-2" style="background-image: url('assets/images/news/image-card1.png');"></div>
     <div class="glass-bar-2">
       <div class="logo-area-2">
-        <img src="assets/mls-logo2.png" alt="لوگو" class="logo-2">
+        <img src="assets/images/logo.png" alt="لوگو" class="logo-2">
         <div class="text-content-2">
           <div class="event-title-2">عنوان دو</div>
           <div class="event-description-2">توضیحات دو</div>
@@ -72,7 +74,7 @@
     <div class="card-image-2" style="background-image: url('assets/images/news/image-card1.png');"></div>
     <div class="glass-bar-2">
       <div class="logo-area-2">
-        <img src="assets/mls-logo.png" alt="لوگو" class="logo-2">
+        <img src="assets/images/logo.png" alt="لوگو" class="logo-2">
         <div class="text-content-2">
           <div class="event-title-2">عنوان سه</div>
           <div class="event-description-2">توضیحات سه</div>
@@ -188,11 +190,14 @@
         <button class="button">جزئیات</button>
       </a>
     </div>
-    
+    <div class="more-button-wrapper">
+  <a href="news.html" class="button">مشاهده بیشتر</a>
+</div>
+
   </div>
   <!-- معرفی اعضای هیات غواصی  -->
   <div class="section-header">
-    <div class="section-title">معرفی اعضای هیات</div>
+    <div class="section-title">معرفی اعضای هیأت</div>
     <a href="earthquake-top/index.html" class="more-button">
       <span>بیشتر</span>
       <img src="assets/images/more.png" alt="بیشتر" />
@@ -220,11 +225,7 @@
       <div class="card-text">معرفی عضو چهارم</div>
     </a>
   </div>
-
- 
-  
-
-  <!-- فوتر -->
+<!-- فوتر -->
   <div w3-include-html="parts/footer.html"></div>
 
 </body>
