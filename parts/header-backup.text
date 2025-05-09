@@ -1,11 +1,43 @@
-<div class="header">
-  <a href="https://bohran.sbportal.ir/" style="text-decoration: none; color: inherit;">
-    <div class="header-text">
-      <h1>غواصی استان سیستان و بلوچستان</h1>
-      <h2>استان سیستان و بلوچستان</h2>
+<div class="header-app">
+  <header>
+    <div class="navbar3">
+      <img src="assets/images/logo.png" alt="لوگو" class="logo3" />
+      <ul class="nav-items3" id="nav-items3">
+        <li class="nav-item3" data-target="menu-namee">بخشنامه ها</li>
+        <li class="nav-item3" data-target="menu-forme">دانلود فرم ها</li>
+        <li class="nav-item3" data-target="menu-doreh">دوره های آموزشی</li>
+      </ul>
     </div>
-  </a>
-  <a href="https://bohran.sbportal.ir/">
-    <img src="assets/Logo.png" class="logo" alt="لوگو" />
-  </a>
-</div>
+  </header>
+<img src="assets/images/header.jpeg" alt="هدر" class="header-image3" />
+  <div class="mega-menu-wrapper3">
+    <div class="mega-menu3" id="menu-namee">
+      <div class="column3">
+        <h4>فدراسیون</h4>
+        <a href="#">بخشنامه یک</a>
+        <a href="#">بخشنامه دو</a>
+        <a href="#">بخشنامه سه</a>
+      </div>
+      <div class="column3">
+        <h4>هیأت</h4>
+        <a href="#">بخشنامه یک</a>
+        <a href="#">بخسنامه دو</a>
+      </div>
+    </div>
+
+    <div class="mega-menu3" id="menu-forme">
+      <div class="column3">
+        <h4>دانلود فرم ها</h4>
+        <a href="#">فرم یک</a>
+        <a href="#">فرم دو</a>
+      </div>
+    </div>
+
+    <div class="mega-menu3" id="menu-doreh">
+      <div class="column3">
+        <h4>دوره های آموزشی</h4>
+        <a href="#">دوره یک</a>
+        <a href="#">دوره دوم</a>
+      </div>
+    </div>
+  </div>
