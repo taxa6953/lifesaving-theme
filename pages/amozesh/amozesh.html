@@ -170,31 +170,56 @@
     <div id="all-news-list"></div>
   </div>
 
-  <script>
-    fetch('../amozesh/amozesh-list.json')
-      .then(res => res.json())
-      .then(list => {
-        const container = document.getElementById('all-news-list');
-        list.forEach(item => {
-          const div = document.createElement('div');
-          div.className = 'news-item';
-          div.innerHTML = `
-            <div class="news-thumb">
-              <img src="${item.thumb}" alt="${item.title}">
-            </div>
-            <div class="news-body">
-              <div class="news-title">${item.title}</div>
-              <div class="news-summary">${item.summary}</div>
-            </div>
-            <div class="news-actions">
-              <div class="news-date">${item.date}</div>
-              <a href="cards/${item.file}" class="btn-details">جزئیات</a>
-            </div>
-          `;
-          container.appendChild(div);
-        });
+<script>
+  fetch('../amozesh/amozesh-list.json')
+    .then(res => res.json())
+    .then(list => {
+      const container = document.getElementById('all-news-list');
+      list.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'news-item';
+
+        const thumbDiv = document.createElement('div');
+        thumbDiv.className = 'news-thumb';
+        const img = document.createElement('img');
+        img.src = item.thumb;
+        img.alt = item.title;
+        thumbDiv.appendChild(img);
+
+        const bodyDiv = document.createElement('div');
+        bodyDiv.className = 'news-body';
+        const title = document.createElement('div');
+        title.className = 'news-title';
+        title.textContent = item.title;
+        const summary = document.createElement('div');
+        summary.className = 'news-summary';
+        summary.textContent = item.summary;
+        bodyDiv.appendChild(title);
+        bodyDiv.appendChild(summary);
+
+        const actionsDiv = document.createElement('div');
+        actionsDiv.className = 'news-actions';
+        const date = document.createElement('div');
+        date.className = 'news-date';
+        date.textContent = item.date;
+        const link = document.createElement('a');
+        link.className = 'btn-details';
+        link.href = `cards/${item.file}`;
+        link.textContent = 'جزئیات';
+        actionsDiv.appendChild(date);
+        actionsDiv.appendChild(link);
+
+        div.appendChild(thumbDiv);
+        div.appendChild(bodyDiv);
+        div.appendChild(actionsDiv);
+
+        container.appendChild(div);
       });
-  </script>
+    })
+    .catch(err => {
+      console.error('خطا در بارگیری لیست آموزش:', err);
+    });
+</script>
 
 </body>
 </html>
