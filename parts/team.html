@@ -1,0 +1,28 @@
+<script>
+function loadPage(pageUrl, newUrl) {
+  fetch(pageUrl)
+    .then(res => res.text())
+    .then(html => {
+      const contentDiv = document.getElementById('content');
+      if (!contentDiv) {
+        alert("div با id='content' پیدا نشد.");
+        return;
+      }
+
+      // تبدیل امن‌تر HTML string به DOM
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+
+      // فقط محتوای body را جایگزین کن (می‌تونه بسته به نیاز div خاصی باشه)
+      const newContent = doc.body.innerHTML;
+      contentDiv.innerHTML = newContent;
+
+      // اسکرول به محتوا و تغییر URL
+      contentDiv.scrollIntoView({ behavior: 'smooth' });
+      history.pushState({}, '', newUrl);
+    })
+    .catch(err => {
+      console.error("خطا در بارگذاری صفحه:", err);
+    });
+}
+</script>
