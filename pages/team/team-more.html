@@ -170,30 +170,60 @@
   </div>
 
   <script>
-    fetch('../team/team-list.json')
-      .then(res => res.json())
-      .then(list => {
-        const container = document.getElementById('all-news-list');
-        list.forEach(item => {
-          const div = document.createElement('div');
-          div.className = 'news-item';
-          div.innerHTML = `
-            <div class="news-thumb">
-              <img src="${item.thumb}" alt="${item.title}">
-            </div>
-            <div class="news-body">
-              <div class="news-title">${item.title}</div>
-              <div class="news-summary">${item.summary}</div>
-            </div>
-            <div class="news-actions">
-              <div class="news-date">${item.date}</div>
-              <a href="../pages/news/cards/${item.file}" class="btn-details">جزئیات</a>
-            </div>
-          `;
-          container.appendChild(div);
-        });
-      });
-  </script>
+fetch('../team/team-list.json')
+  .then(res => res.json())
+  .then(list => {
+    const container = document.getElementById('all-news-list');
 
+    list.forEach(item => {
+      const div = document.createElement('div');
+      div.className = 'news-item';
+
+      // ساخت تصویر
+      const img = document.createElement('img');
+      img.src = item.thumb;
+      img.alt = item.title;
+      const thumbDiv = document.createElement('div');
+      thumbDiv.className = 'news-thumb';
+      thumbDiv.appendChild(img);
+
+      // ساخت بدنه خبر
+      const titleDiv = document.createElement('div');
+      titleDiv.className = 'news-title';
+      titleDiv.textContent = item.title;
+
+      const summaryDiv = document.createElement('div');
+      summaryDiv.className = 'news-summary';
+      summaryDiv.textContent = item.summary;
+
+      const bodyDiv = document.createElement('div');
+      bodyDiv.className = 'news-body';
+      bodyDiv.appendChild(titleDiv);
+      bodyDiv.appendChild(summaryDiv);
+
+      // ساخت بخش اکشن‌ها
+      const dateDiv = document.createElement('div');
+      dateDiv.className = 'news-date';
+      dateDiv.textContent = item.date;
+
+      const link = document.createElement('a');
+      link.href = `../pages/news/cards/${item.file}`;
+      link.className = 'btn-details';
+      link.textContent = 'جزئیات';
+
+      const actionsDiv = document.createElement('div');
+      actionsDiv.className = 'news-actions';
+      actionsDiv.appendChild(dateDiv);
+      actionsDiv.appendChild(link);
+
+      // اضافه کردن به کارت نهایی
+      div.appendChild(thumbDiv);
+      div.appendChild(bodyDiv);
+      div.appendChild(actionsDiv);
+      container.appendChild(div);
+    });
+  })
+  .catch(error => console.error('خطا در بارگذاری لیست:', error));
+</script>
 </body>
 </html>
