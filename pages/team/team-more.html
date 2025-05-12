@@ -207,7 +207,7 @@ fetch('../team/team-list.json')
       dateDiv.textContent = item.date;
 
       const link = document.createElement('a');
-      link.href = `../pages/news/cards/${item.file}`;
+      link.href = `cards/${item.file}`;
       link.className = 'btn-details';
       link.textContent = 'جزئیات';
 
