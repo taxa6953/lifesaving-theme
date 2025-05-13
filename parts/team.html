@@ -1,32 +1,31 @@
-<!-- معرفی اعضای هیات -->
-  <div class="section-header">
-  <div class="section-title">معرفی اعضای هیأت</div>
-  <a href="pages/team/team-more.html" class="more-button">
+<!-- دوره های آموزشی -->
+<div class="section-header">
+  <div class="section-title">دوره های آموزشی</div>
+  <a href="pages/amozesh/amozesh.html" class="more-button">
     <span>بیشتر</span>
-    <img src="assets/images/more.webp" alt="بیشتر" />
+    <img src="assets/images/more.png" alt="بیشتر" />
   </a>
 </div>
 <div class="card-section">
+   <div class="card-section">
+    <a class="card" href="popular/card1/index.html">
+      <img src="assets/images/amozesh/image-card1.png" alt="تصویر 1"/>
+      <div class="card-title">دوره آموزشی یک</div>
+      <div class="card-text">توضیح دوره آمپزشی یک</div>
+    </a>
+    <a href="popular/card7/index.html" class="card">
+      <img src="assets/images/amozesh/image-card1.png" alt="تصویر 2" />
+      <div class="card-title">دوره آموزشی دو</div>
+      <div class="card-text">توضیح دوره آموزشی  دو</div>
+    </a>
+    <a href="popular/card6/index.html" class="card">
+      <img src="assets/images/amozesh/image-card1.png" alt="تصویر 3" />
+      <div class="card-title">دوره آموزشی سه </div>
+      <div class="card-text">توضیح دوره آموزشی سه</div>
+    </a>
+    <a href="popular/card5/index.html" class="card">
+      <img src="assets/images/amozesh/image-card1.png" alt="تصویر 4" />
+      <div class="card-title">دوره آموزشی چهار</div>
+      <div class="card-text">توضیح دوره آموزشی چهار</div>
+    </a>
 </div>
-<div class="card-section">
-  <a href="pages/team/cards/card-1.html" class="card" onclick="loadPage('earthquake-top/card1/index.html', '/#card1'); return false;">
-    <img src="assets/images/team/image-card1.webp" alt="تصویر 1" draggable="false" oncontextmenu="return false" />
-    <div class="card-title">رئیس هیأت </div>
-    <div class="card-text">دکنر مجید محبی</div>
-  </a>
-
-  
-</div>
-
-<!-- جاوااسکریپت بارگذاری -->
-<script>
-function loadPage(pageUrl, newUrl) {
-  fetch(pageUrl)
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById('content')?.scrollIntoView({ behavior: 'smooth' });
-      document.getElementById('content') ? document.getElementById('content').innerHTML = html : alert("div با id='content' پیدا نشد.");
-      history.pushState({}, '', newUrl);
-    });
-}
-</script>
