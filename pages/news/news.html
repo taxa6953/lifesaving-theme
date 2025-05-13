@@ -169,16 +169,17 @@
 
     <div id="all-news-list"></div>
   </div>
-
- <script>
+<script>
   fetch('../news/news-list.json')
     .then(res => res.json())
     .then(list => {
       const container = document.getElementById('all-news-list');
+
       list.forEach(item => {
         const div = document.createElement('div');
         div.className = 'news-item';
 
+        // تصویر بندانگشتی
         const thumbDiv = document.createElement('div');
         thumbDiv.className = 'news-thumb';
         const img = document.createElement('img');
@@ -186,6 +187,7 @@
         img.alt = item.title;
         thumbDiv.appendChild(img);
 
+        // بدنه خبر
         const bodyDiv = document.createElement('div');
         bodyDiv.className = 'news-body';
         const title = document.createElement('div');
@@ -197,6 +199,7 @@
         bodyDiv.appendChild(title);
         bodyDiv.appendChild(summary);
 
+        // اقدامات پایین کارت
         const actionsDiv = document.createElement('div');
         actionsDiv.className = 'news-actions';
         const date = document.createElement('div');
@@ -204,11 +207,12 @@
         date.textContent = item.date;
         const link = document.createElement('a');
         link.className = 'btn-details';
-        link.href = `${item.file}`;
+        link.href = item.file;
         link.textContent = 'جزئیات';
         actionsDiv.appendChild(date);
         actionsDiv.appendChild(link);
 
+        // ترکیب اجزا
         div.appendChild(thumbDiv);
         div.appendChild(bodyDiv);
         div.appendChild(actionsDiv);
